@@ -1,4 +1,4 @@
-# Habit Tracker API
+# Habit Tracker API - Semana 1
 Actividad Unidad 1 – Programación Avanzada  
 Semana 1  
 
@@ -85,8 +85,54 @@ DELETE /api/habits/:id
 
 ---
 
-## Autor
 
-Nombre: Angelo Ralac - 1210086 
-Curso: Programación Avanzada  
-Semana: 1
+# Habit Tracker API - Semana 2
+Actividad Unidad 2 – Programación Avanzada  
+Semana 2 
+
+## Descripción del Proyecto
+
+Esta aplicación es una API REST desarrollada en Express.js conectada a una base de datos MongoDB Atlas mediante Mongoose.
+
+Permite gestionar hábitos realizando operaciones CRUD:
+- Crear hábitos
+- Consultar hábitos
+- Actualizar hábitos
+- Eliminar hábitos
+
+---
+
+## Tecnologías agregadas
+
+- Next.js
+- Redux Toolkt
+- React-redux
+- Integración de request GET con el backend
+- Separación de proyectos
+
+---
+
+## Ejecución del Proyecto
+
+## Backend
+1. Entrar en la carpeta backend
+2. Instalar dependencias:
+
+3. Crear el archivo .env
+4. Ejecutar el servidor node server.js
+
+## Frontend
+1. Entrar en la carpeta frontend
+2. Instalar dependencias
+3. Ejecutar el servidor
+
+
+---
+
+## Funcionalidades Implementadas
+
+- Configuración inicial de Next.js
+- Integración de Redux
+- Request GET 
+- Conexion a MongoDB Atlas
+
