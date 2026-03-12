@@ -136,3 +136,34 @@ Permite gestionar hábitos realizando operaciones CRUD:
 - Request GET 
 - Conexion a MongoDB Atlas
 
+# Habit Tracker API - Semana 4
+## Actividad Unidad 4 – Programación Avanzada
+### Semana 4
+
+## Descripción del Proyecto
+En esta semana se trabajó el backend del proyecto Habit Tracker agregando autenticación de usuarios, encriptación de contraseñas con hash y lógica de seguimiento de hábitos por días. También se implementó la funcionalidad para marcar hábitos como completados y reiniciar o aumentar la racha según corresponda.
+
+## Tecnologías agregadas
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- bcryptjs
+- dotenv
+
+## Ejecución del Proyecto
+### Backend
+1. Entrar en la carpeta `backend`
+2. Instalar dependencias con `npm install`
+3. Crear o revisar el archivo `.env` con la variable `MONGO_URI`
+4. Ejecutar el servidor con `npm run dev`
+
+## Funcionalidades Implementadas
+- Registro de usuario
+- Login de usuario
+- Contraseña almacenada con hash
+- Conexión a MongoDB Atlas
+- Creación de hábitos
+- Endpoint para marcar hábito como completado
+- Lógica de racha diaria
+- Reinicio de racha si no se cumple en el día correspondiente
+- Validación para no marcar dos veces el mismo día
