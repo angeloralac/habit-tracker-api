@@ -17,8 +17,13 @@ const habitSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+lastCompletedDate: {
+  type: Date,
+  default: null,
+},  
   },
   { timestamps: true }
 );
+
 
 module.exports = mongoose.model("Habit", habitSchema);
