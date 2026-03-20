@@ -167,3 +167,36 @@ En esta semana se trabajó el backend del proyecto Habit Tracker agregando auten
 - Lógica de racha diaria
 - Reinicio de racha si no se cumple en el día correspondiente
 - Validación para no marcar dos veces el mismo día
+
+# Habit Tracker API - Semana 5
+## Actividad Unidad 5 – Programación Avanzada  
+## Semana 5
+
+## Descripción del Proyecto
+En esta semana se trabajó el backend del proyecto Habit Tracker agregando autenticación basada en JWT, middleware de autorización para proteger rutas y validación de acceso de usuarios autenticados. También se integró el registro, login y la creación de hábitos vinculados al usuario autenticado.
+
+## Tecnologías agregadas
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- bcryptjs
+- jsonwebtoken
+- dotenv
+
+## Ejecución del Proyecto
+
+### Backend
+1. Entrar en la carpeta `backend`
+2. Instalar dependencias con `npm install`
+3. Crear o revisar el archivo `.env` con las variables `MONGO_URI` y `JWT_SECRET`
+4. Ejecutar el servidor con `npm start`
+
+## Funcionalidades Implementadas
+- Registro de usuario
+- Login de usuario
+- Generación de token JWT
+- Middleware de autorización
+- Protección de ruta para agregar hábitos
+- Asociación del hábito con el usuario autenticado
+- Validación de token en rutas protegidas
+- Conexión a MongoDB Atlas
