@@ -1,11 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const Habit = require("../models/Habit");
+const authMiddleware = require("../middleware/authMiddleware");
 
 
-router.post("/", async (req, res) => {
+router.post("/", authMiddleware, async (req, res) => {
   try {
-    const habit = new Habit(req.body);
+    const habit = new Habit({
+  ...req.body,
+  user: req.user.id,
+});
     await habit.save();
     res.status(201).json(habit);
   } catch (error) {
