@@ -17,32 +17,12 @@ router.post("/", authMiddleware, async (req, res) => {
   }
 });
 
-
-router.get("/", async (req, res) => {
+router.get("/", authMiddleware, async (req, res) => {
   try {
-    const habits = await Habit.find();
+    const habits = await Habit.find({ user: req.user.id });
     res.json(habits);
   } catch (error) {
     res.status(500).json({ error: error.message });
-  }
-});
-
-
-router.put("/:id", async (req, res) => {
-  try {
-    const updatedHabit = await Habit.findByIdAndUpdate(
-      req.params.id,
-      req.body,
-      { new: true }
-    );
-
-    if (!updatedHabit) {
-      return res.status(404).json({ message: "Hábito no encontrado" });
-    }
-
-    res.json(updatedHabit);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
   }
 });
 
