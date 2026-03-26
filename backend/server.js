@@ -13,10 +13,17 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/habits", habitRoutes);
 
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB conectado correctamente"))
-  .catch(err => console.error("Error conectando a MongoDB:", err));
+async function startServer() {
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("MongoDB conectado correctamente");
 
-app.listen(5050, "0.0.0.0", () => {
-  console.log("Servidor corriendo en http://localhost:5050");
-});
+    app.listen(5050, "0.0.0.0", () => {
+      console.log("Servidor corriendo en http://localhost:5050");
+    });
+  } catch (error) {
+    console.error("Error conectando a MongoDB:", error);
+  }
+}
+
+startServer();
