@@ -200,3 +200,48 @@ En esta semana se trabajó el backend del proyecto Habit Tracker agregando auten
 - Asociación del hábito con el usuario autenticado
 - Validación de token en rutas protegidas
 - Conexión a MongoDB Atlas
+
+# Habit Tracker API Backend - Semana 6
+Actividad Unidad 6 – Programación Avanzada  
+Semana 6  
+
+## Descripción del Proyecto
+En esta semana se trabajó el despliegue del backend del proyecto **Habit Tracker API** utilizando **Vercel**. También se realizaron ajustes para asegurar la conexión correcta con **MongoDB Atlas** en producción, el uso de variables de entorno y el filtrado de hábitos por usuario autenticado.
+
+## Tecnologías agregadas
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- bcryptjs
+- jsonwebtoken
+- dotenv
+- Vercel
+
+## Ejecución del Proyecto
+
+### Backend
+1. Entrar en la carpeta `backend`
+2. Instalar dependencias con `npm install`
+3. Crear o revisar el archivo `.env` con las variables:
+   - `MONGO_URI`
+   - `JWT_SECRET`
+4. Ejecutar el servidor con `npm run dev`
+
+## Funcionalidades Implementadas
+- Despliegue del backend en Vercel
+- Configuración de variables de entorno en Vercel
+- Conexión del backend con MongoDB Atlas en producción
+- Corrección de la conexión a la base de datos antes de iniciar el servidor
+- Registro de usuarios
+- Login de usuarios con JWT
+- Protección de rutas con middleware de autenticación
+- Asociación de hábitos al usuario autenticado
+- Filtrado de hábitos por usuario autenticado
+
+## Enlace del Backend
+https://habit-tracker-api-backend.vercel.app
+
+## Resultado de la Semana
+Se logró desplegar correctamente el backend en Vercel, conectarlo con MongoDB Atlas y dejar funcionando las rutas principales de autenticación y hábitos en producción.
+
